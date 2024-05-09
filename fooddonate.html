@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodAngels</title>
+  <link rel="stylesheet" href="loginstyle.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body style="font-family:  'Poppins', sans-serif; background-color:#06C167;">
+  <header>
+    <div class="logo">Food<b style="color: #06C167;">Angels</b></div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="fooddonate.html" class="active">Donate</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="signin.html">Login</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+    }
+  </script>
+
+
+
+  <div class="container">
+    <div class="regform">
+      <form action="fooddonateform.php" method="post">
+        <p class="logo">Food<b style="color: #06C167;">Angels</b></p>
+
+        <div class="input">
+          <label for="foodname"> Food Name:</label>
+          <input type="text" id="foodname" name="foodname">
+        </div>
+
+
+        <div class="radio">
+          <label for="meal">Meal type :</label>
+          <br><br>
+
+          <input type="radio" name="meal" id="veg" value="veg">
+          <label for="veg" style="padding-right: 40px;">Veg</label>
+          <input type="radio" name="meal" id="Non-veg" value="Non-veg">
+          <label for="Non-veg">Non-veg</label>
+
+        </div>
+        <br>
+        <div class="input">
+          <label for="food">Select the Category:</label>
+          <br><br>
+          <div class="image-radio-group">
+            <input type="radio" id="raw-food" name="image-choice" value="raw-food" checked>
+            <label for="raw-food">
+              <img src="img/raw-food.png" alt="raw-food">
+            </label>
+            <input type="radio" id="cooked-food" name="image-choice" value="cooked-food">
+            <label for="cooked-food">
+              <img src="img/cooked-food.png" alt="cooked-food">
+            </label>
+            <input type="radio" id="packed-food" name="image-choice" value="packed-food">
+            <label for="packed-food">
+              <img src="img/packed-food.png" alt="packed-food">
+            </label>
+          </div>
+
+          <!-- <input type="text" id="food" name="food"> -->
+        </div>
+        <div class="input">
+          <label for="quantity">Quantity (person):</label>
+          <input type="text" id="quantity" name="quantity">
+        </div>
+        <div class="input">
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div>
+            <label for="phoneno">PhoneNo:</label>
+            <input type="text" id="phoneno" name="phoneno">
+          </div>
+        </div>
+        <div class="input">
+          <label for="location"></label>
+          <label for="state">State:</label>
+          <select id="state" name="state" style="padding:10px;">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Puducherry">Puducherry</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+          </select>
+          <br>
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address"><br>
+
+        </div>
+        <div class="btn">
+          <button type="submit" name="submit"> submit</button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-left col-md-4 col-sm-6">
+      <p class="about" style="text-align: justify;">
+        <span> About us</span>The basic concept of this project Food Waste Management is to collect the excess/leftover
+        food from donors such as hotels, restaurants, marriage halls , etc and distribute to the needy people .
+      </p>
+
+    </div>
+    <div class="footer-center col-md-4 col-sm-6">
+      <div>
+        <p><span> Contact</span> </p>
+
+      </div>
+      <div>
+
+        <p> (+91) 95555 000 000</p>
+
+      </div>
+      <div>
+
+        <p><a href="#"> foodangles@gmail.com</a></p>
+      </div>
+      <div class="sociallist">
+        <ul class="social">
+          <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+          <li><a href="https://github.com/"><i class="fa fa-github"
+                style="font-size:50px;color: black;"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-right col-md-4 col-sm-6">
+      <h2> Food<span>Angels</span></h2>
+      <p class="menu">
+        <a href="/"> Home</a> |
+        <a href="/about.html"> About</a> |
+        <!-- <a href="#"> Services</a> | -->
+        <a href="/contact.html"> Contact</a>
+      </p>
+      <p class="name"> FoodAngels &copy; 2023</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

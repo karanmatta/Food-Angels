@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodAngels</title>
+  <link rel="stylesheet" href="home.css">
+
+  <link rel="stylesheet" href="chatbot.css">
+
+
+</head>
+
+
+<body>
+  <header>
+    <div class="logo">Food<b style="color: #06C167;">Angels</b></div>
+    <div class="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="fooddonate.html">Donate</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="signin.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function () {
+      navBar = document.querySelector(".nav-bar");
+      navBar.classList.toggle("active");
+    }
+  </script>
+  <section class="cover1">
+  </section>
+  <div class="content-about">
+    <h2 class="header-about">Welcome to Food<b style="color: rgb(4, 230, 53);">Angles</b></h2>
+    <br>
+    <div class="body-about">
+      <div class="body-about-2">
+        <div class="left-body">
+          At Food Angles, we are committed to making a difference in our community by fighting food insecurity and
+          reducing
+          food waste. We believe that everyone deserves access to nutritious meals, and we work tirelessly to bridge the
+          gap
+          between surplus food and those in need.
+          <br>
+          <br>
+          <h3 class="sub-heading">Our Mission:</h3>
+          Our mission is to alleviate hunger and provide food assistance to individuals and families facing food
+          insecurity.
+          We aim to create a sustainable food system by rescuing surplus food from various sources and redistributing it
+          to
+          those who need it the most. Through our efforts, we strive to improve the well-being and quality of life for
+          vulnerable populations.
+          <br>
+          <br>
+          <h3 class="sub-heading">What We Do:</h3>
+          1. Food Rescue: We collaborate with local restaurants, grocery stores, farms, and other food providers to
+          collect
+          excess, fresh, and healthy food that would otherwise go to waste.
+          <br>
+          2. Food Distribution: Once we have collected the rescued food, we efficiently sort, package, and distribute it
+          to
+          partner organizations such as shelters, community centers, food banks, and schools.
+          <br>
+          3. Education and Advocacy: We believe in the power of education and advocacy to address the root causes of
+          food
+          insecurity. We raise awareness about food waste, sustainable practices, and the importance of equal access to
+          food.
+          <br>
+          <br>
+        </div>
+        <div class="right-body">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player class="image-about" src="https://assets5.lottiefiles.com/packages/lf20_xmdlmtgz.json"
+            background="transparent" speed="1" style="width: 500px; height: 300px;" loop autoplay></lottie-player>
+        </div>
+      </div>
+      <div>
+        <h3 class="sub-heading">How You Can Help:</h3>
+        1. Food Donations: If you are a food provider with surplus food, we encourage you to join our network of
+        partners.
+        Your donations can make a significant impact on the lives of individuals and families in our community.
+        <br>
+        2. Volunteer: We rely on the support of dedicated volunteers who help with food collection, sorting, packaging,
+        and distribution. Y
+        <br>
+        3. Monetary Contributions: Financial contributions are crucial to sustaining our operations and expanding our
+        reach.
+        <br>
+        Join us in our fight against food insecurity and help us create a future where no one goes hungry. Together, we
+        can make a lasting impact and build a stronger, more equitable society.
+        <br>
+        <br>
+        <div style="text-align: center;">Thank you for visiting our food donation web page and for your support.
+          Together, we can make a difference!</div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-left col-md-4 col-sm-6">
+      <p class="about" style="text-align: justify;">
+        <span> About us</span>The basic concept of this project Food Waste Management is to collect the excess/leftover
+        food from donors such as hotels, restaurants, marriage halls , etc and distribute to the needy people .
+      </p>
+
+    </div>
+    <div class="footer-center col-md-4 col-sm-6">
+      <div>
+        <p><span> Contact</span> </p>
+
+      </div>
+      <div>
+
+        <p> (+91) 95555 000 000</p>
+
+      </div>
+      <div>
+
+        <p><a href="#"> foodangles@gmail.com</a></p>
+      </div>
+      <div class="sociallist">
+        <ul class="social">
+          <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+          <li><a href="https://github.com/"><i class="fa fa-github"
+                style="font-size:50px;color: black;"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-right col-md-4 col-sm-6">
+      <h2> Food<span>Angels</span></h2>
+      <p class="menu">
+        <a href="/"> Home</a> |
+        <a href="/about.html"> About</a> |
+        <!-- <a href="#"> Services</a> | -->
+        <a href="/contact.html"> Contact</a>
+      </p>
+      <p class="name"> FoodAngels &copy; 2023</p>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="chatbot.js"></script>
+<script type="text/javascript" src="constants.js"></script>
+<script type="text/javascript" src="speech.js"></script>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
+</script>
+
+</html>
